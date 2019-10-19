@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/views/login'
 import Welcome from '@/views/welcome'
+import Sign from '@/views/sign'
 
 Vue.use(Router);
 
@@ -20,13 +21,18 @@ export default new Router({
   },
   routes: [
     {
+      path: '/',
+      redirect: 'welcome',
+      hidden: true
+    },
+    {
       path: '/login',
       component: Login,
       hidden: true
     },
     {
-      path: '/#/login',
-      component: Login,
+      path: '/sign',
+      component: Sign,
       hidden: true
     },
     {

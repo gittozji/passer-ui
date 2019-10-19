@@ -7,7 +7,9 @@
       <v-spacer></v-spacer>
     </v-app-bar>
 
-    <router-view></router-view>
+    <div style="margin-top: 56px">
+      <router-view></router-view>
+    </div>
   </v-app>
 </template>
 
